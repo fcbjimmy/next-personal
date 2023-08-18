@@ -16,9 +16,7 @@ export default function Navbar() {
               <div className="flex justify-between w-full">
                 <div className="flex items-center">
                   <Link href="/">
-                    <h1 className="text-2xl font-medium">
-                      Jimmy <span className="text-teal-500">Marshal</span>
-                    </h1>
+                    <h1 className="text-2xl font-medium">Jimmy</h1>
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8 sm:items-center">
@@ -45,10 +43,10 @@ export default function Navbar() {
                     Guestbook
                   </Link>
                   <Link
-                    href="/Projects"
+                    href="/projects"
                     prefetch
                     className={`${
-                      pathname === "/Projects"
+                      pathname === "/projects"
                         ? "border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                         : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }`}

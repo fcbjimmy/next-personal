@@ -1,16 +1,12 @@
 import React from "react";
 import Form from "../components/Form";
 import { getEntries } from "@/lib/getEntries";
-// import { prisma } from "../db";
 
-// export async function getEntries() {
-//   const data = await prisma.guestbook.findMany({
-//     take: 50,
-//     orderBy: { created_at: "desc" },
-//   });
-
-//   return data;
-// }
+export async function generateMetadata() {
+  return {
+    title: "Guestbook",
+  };
+}
 
 export const revalidate = 60;
 
