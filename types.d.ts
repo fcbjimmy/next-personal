@@ -6,7 +6,7 @@ type Data = {
   imageUrl: string;
 };
 
-type FormData = {
+type ContactData = {
   name: string;
   email: string;
   message: string;
