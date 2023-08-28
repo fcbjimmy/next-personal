@@ -2,6 +2,17 @@ import Image from "next/image";
 import photo from "@/public/profile/profile.png";
 
 export default function Home() {
+  const techs: string[] = [
+    "HTML",
+    "React JS",
+    "CSS",
+    "Next JS 13",
+    "JavaScript",
+    "Node JS",
+    "TypeScript",
+    "Express.js",
+    "SQL",
+  ];
   return (
     <div className="divide-y divide-gray-100 dark:divide-gray-700">
       <div className="space-y-2 pt-5 pb-8 md:space-x-5">
@@ -50,24 +61,21 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
+        <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2 dark:selection:bg-teal-600 selection:bg-teal-400">
+          <p>Hey everyone my name is Jimmy 👋🏼</p>
           <p>
-            Hey everyone my name is Jan, I am 18 years old and i am a Full Stack
-            developer based in Hamburg/Germany
+            I am passionate about web development ever since I got introduced to
+            JavaScript. I aspire to become a Software Engineer through mastering
+            my coding skills and be able to solve problems by comprehending them
+            and anticipating the users' needs. I wanna keep learning to improve
+            myself and be a better programmer.
           </p>
-          <p>
-            I love building Full Stack applications with React and to share them
-            on YouTube. When I discovered React, I was blown away by its
-            interactivity and speed. Its virtual DOM and efficient rendering
-            mechanisms allowed me to create dynamic user interfaces that
-            responded to user actions in real-time.
-          </p>
-          <p>
-            Building applications with Reactand sharing them on YouTube is my
-            ultimate combination of creative expression, technical expertise,
-            and community engagement. I am thrilled to continue this journey,
-            honing my skills, and inspiring others in the process.
-          </p>
+          <p>My tech stack:</p>
+          <ul className="grid gap-4 grid-cols-2">
+            {techs.map((tech, id) => {
+              return <li key={id}>{tech}</li>;
+            })}
+          </ul>
         </div>
       </div>
     </div>
