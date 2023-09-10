@@ -1,6 +1,5 @@
 import React from "react";
 import getProjects from "@/lib/getProjects";
-import project from "@/sanity/schemas/project";
 import Image from "next/image";
 
 export async function generateMetadata() {
